@@ -1,0 +1,266 @@
+/* Resetting font-size to 16 for rem purposes */
+html, body {
+    font-size: 16px;
+}
+
+
+/* Flex created as a class */
+#part3 .flex {
+    display: flex;
+}
+
+
+/* Styling main components of 1/2 Part of the page */
+#part3 .plan-container {
+    margin: 8.75rem 13.75rem;
+    position: relative;
+}
+
+#part3 .plan-container > p {
+    text-align: center;
+    max-width: 61rem;
+    line-height: 1.9rem;
+    margin: 1.5rem auto 3.75rem;
+}
+
+#part3 .plan-options-container {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 92.5rem;
+}
+
+
+/* 1.0 Styling Typography: Main */
+#part3 h2, 
+#part3 h3,
+#part3 h4, 
+#part3 p, 
+#part3 button, 
+#part3 li {
+    font-family: 'Inter', sans-serif;
+    color: #212529;
+}
+
+#part3 h2 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+#part3 h3 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+#part3 h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 2.5rem 2.75rem 1.6rem;
+}
+
+#part3 p {
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+#part3 li {
+    position: relative;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1.75rem;
+    margin-left: 5rem;
+    margin-right: 2.75rem;
+    line-height: 1.25rem;
+}
+
+/* 1.1 Styling list check marks: 1st & 3rd plans */
+#part3 li:before {
+    content: "";
+    position: absolute;
+    top: -.125rem;
+    left: -2.5rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-image: url('./luka-images/list-tick-icon-black.png');
+    background-repeat: no-repeat;
+}
+
+
+/* 2.0 Styling Typography: Other elements */
+#part3 .price {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin: 0rem 2.75rem;
+}
+
+#part3 .plan-description {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin: 1.6rem 2.75rem;
+}
+
+
+/* 3.0 Styling typography: Middle active plan */
+#part3 .personal-plan h4, 
+#part3 .personal-plan p, 
+#part3 .personal-plan li {
+    color: #043873;
+}
+
+#part3 .personal-plan h4 {
+    margin-top: 0;
+}
+
+#part3 .personal-plan li {
+    font-weight: 500;
+    line-height: 1.45rem;
+    font-size: 1.125rem;
+}
+
+/* 3.1 Styling list check marks: 2nd plan */
+#part3 .personal-plan > ul > li:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -2.5rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-image: url('./luka-images/list-tick-icon-blue.png');
+    background-repeat: no-repeat;
+}
+
+/* Styling Header underline elements */
+/* #part3 .plan-container img {
+    position: absolute;
+    right: 29%;
+    top: 5%;
+    z-index: -1;
+} */
+
+/* Styling plan boxes */
+#part3 .free-plan, 
+#part3 .organization-plan {
+    border: 1px solid #ffe492;
+    border-radius: 0.625rem;
+}
+
+#part3 .personal-plan {
+    border-radius: 0.625rem;
+    margin: 0rem 2rem;
+    padding-block: 5rem;
+    box-shadow: 0rem .25rem 3.125rem rgba(0, 0, 0, 0.08);
+}
+
+
+/* Styling Buttons */
+#part3 button {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 0 2.5rem 2.75rem;
+}
+
+#part3 .plan-options-container button {
+    background-color: #ffffff;
+    border: 1px solid #ffe492;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 1rem 2.5rem;
+}
+
+#part3 .personal-plan button {
+    color: #ffffff;
+    background-color: #4F9CF9;
+    margin-bottom: 0;
+    border: none;
+}
+
+#part3 .try-taskey-container button {
+    background-color: #4F9CF9;
+    color: #ffffff;
+    font-size: 1.125rem;
+    border-radius: .5rem;
+    padding: 1rem 4rem 1rem 2.5rem;
+    margin: 3.75rem auto;
+    display: block;
+    background-image: url('./luka-images/btn-arrow.png');
+    background-repeat: no-repeat;
+    background-position: 80%;
+}
+
+
+/* Styling footer */
+#part3 .try-taskey-container {
+    height: 36rem;
+    background-color: #043873;
+    position: relative;
+}
+
+#part3 .try-taskey-container h3 {
+    color: #ffffff;
+    padding: 8.75rem 0 1.5rem;
+}
+
+#part3 .try-taskey-container p {
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.9rem;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+#part3 .try-taskey-container img {
+    position: absolute;
+    left: -20rem;
+    bottom: .6rem;
+    opacity: 0.2;
+} 
+
+
+/* Responsive */
+@media (max-width: 1300px) {
+    #part3 .plan-container {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    #part3 .plan-options-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #part3 .personal-plan {
+        margin-block: 3rem;
+    }
+}
+
+@media (max-width: 950px) {
+    #part3 .try-taskey-container {
+        height: 37rem;
+    } 
+
+    #part3 .try-taskey-container h3 {
+        padding-top: 6rem;
+    }
+
+    #part3 .try-taskey-container p {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    #part3 .try-taskey-container {
+        height: 42rem;
+    } 
+
+    #part3 .try-taskey-container img {
+        left: -25rem;
+    }
+}
+
+@media (max-width: 475px) {
+    #part3 .try-taskey-container h3 {
+        font-size: 3rem;
+    }
+}
