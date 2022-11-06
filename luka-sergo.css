@@ -1,0 +1,105 @@
+/* Flex created as a class */
+#part2 .flex {
+    width: 100%;
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Styling layout of 2 main containers */
+#part2 .work-together-container,
+#part2 .customize-needs-container {
+    max-width: 92.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#part2 .work-together-container {
+    margin: 6.25rem auto 8.75rem auto;
+}
+
+#part2 .customize-needs-container {
+    margin: 17.5rem auto 17.5rem auto;
+}
+
+#part2 .work-together-container img {
+    margin-right: 6.25rem;
+}
+
+#part2 .customize-needs-container img {
+    margin-left: 6.25rem;
+}
+
+
+/* Styling Typography */
+#part2 h2,
+p,
+button {
+    font-family: 'Inter', sans-serif;
+    color: #212529;
+}
+
+#part2 h2 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    padding-bottom: .5rem;
+}
+
+#part2 p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 1rem 0 3.75rem 0;
+}
+
+/* Underline effect */
+#part2 .work-together-container h2 {
+    background: url(./luka-sergo-images/yellow-undeline-effect-1.png) no-repeat 57% 99%;
+}
+
+#part2 .customize-needs-container h2 {
+    background: url(./luka-sergo-images/yellow-undeline-effect-2.png) no-repeat 40% 98%;
+}
+
+
+/* Styling buttons */
+#part2 button {
+    color: #ffffff;
+    background-color: #4F9CF9;
+    font-size: 1.125rem;
+    font-weight: 500;
+    border-radius: .5rem;
+    padding: 1.25rem 4rem 1.25rem 2.5rem;
+    background-image: url('./luka-sergo-images/btn-arrow.png');
+    background-repeat: no-repeat;
+    background-position: 80%;
+}
+
+@media (max-width: 475px) {
+    #forresponsivsection2img {
+        display: none;
+    }
+
+    #forresponsivsection2img1 {
+        display: none;
+    }
+
+    #work-together-containerforres {
+        text-align: center;
+    }
+
+    #customize-needs-containerforres {
+        text-align: center;
+
+    }
+
+    .customize-needs-info {
+        margin-top: -200px;
+    }
+
+    .work-together-info {
+        margin-top: -100px;
+    }
+
+
+}
