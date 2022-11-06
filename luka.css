@@ -1,5 +1,6 @@
 /* Resetting font-size to 16 for rem purposes */
-html, body {
+html,
+body {
     font-size: 16px;
 }
 
@@ -9,6 +10,9 @@ html, body {
     display: flex;
 }
 
+button:hover {
+    background-color: gray !important;
+}
 
 /* Styling main components of 1/2 Part of the page */
 #part3 .plan-container {
@@ -16,11 +20,11 @@ html, body {
     position: relative;
 }
 
-#part3 .plan-container > p {
+#part3 .plan-container>p {
     text-align: center;
     max-width: 61rem;
     line-height: 1.9rem;
-    margin: 1.5rem auto 3.75rem;
+    margin: 0 auto 3.75rem;
 }
 
 #part3 .plan-options-container {
@@ -32,11 +36,11 @@ html, body {
 
 
 /* 1.0 Styling Typography: Main */
-#part3 h2, 
+#part3 h2,
 #part3 h3,
-#part3 h4, 
-#part3 p, 
-#part3 button, 
+#part3 h4,
+#part3 p,
+#part3 button,
 #part3 li {
     font-family: 'Inter', sans-serif;
     color: #212529;
@@ -46,12 +50,15 @@ html, body {
     font-size: 4.5rem;
     font-weight: 700;
     text-align: center;
+    padding-bottom: 1.5rem;
+    background: url(./luka-images/yellow-paint.png) no-repeat 63% 80%;
 }
 
 #part3 h3 {
     font-size: 4.5rem;
     font-weight: 700;
     text-align: center;
+    background: url(./luka-images/blue-paint.png) no-repeat 76% 93%;
 }
 
 #part3 h4 {
@@ -103,8 +110,8 @@ html, body {
 
 
 /* 3.0 Styling typography: Middle active plan */
-#part3 .personal-plan h4, 
-#part3 .personal-plan p, 
+#part3 .personal-plan h4,
+#part3 .personal-plan p,
 #part3 .personal-plan li {
     color: #043873;
 }
@@ -119,8 +126,9 @@ html, body {
     font-size: 1.125rem;
 }
 
+
 /* 3.1 Styling list check marks: 2nd plan */
-#part3 .personal-plan > ul > li:before {
+#part3 .personal-plan>ul>li:before {
     content: "";
     position: absolute;
     top: 0;
@@ -131,16 +139,9 @@ html, body {
     background-repeat: no-repeat;
 }
 
-/* Styling Header underline elements */
-/* #part3 .plan-container img {
-    position: absolute;
-    right: 29%;
-    top: 5%;
-    z-index: -1;
-} */
 
 /* Styling plan boxes */
-#part3 .free-plan, 
+#part3 .free-plan,
 #part3 .organization-plan {
     border: 1px solid #ffe492;
     border-radius: 0.625rem;
@@ -215,7 +216,7 @@ html, body {
     left: -20rem;
     bottom: .6rem;
     opacity: 0.2;
-} 
+}
 
 
 /* Responsive */
@@ -233,29 +234,54 @@ html, body {
     #part3 .personal-plan {
         margin-block: 3rem;
     }
+
+    #part3 h2 {
+        background-position-x: 70%;
+    }
+
+    #part3 h3 {
+        background-position-x: 93%;
+    }
+}
+
+@media (max-width: 1100px) {
+    #part3 h3 {
+        background-image: none;
+    }
 }
 
 @media (max-width: 950px) {
     #part3 .try-taskey-container {
         height: 37rem;
-    } 
+    }
 
     #part3 .try-taskey-container h3 {
         padding-top: 6rem;
+        background-image: url(./luka-images/blue-paint.png);
+        background-position-x: 50%;
     }
 
     #part3 .try-taskey-container p {
         max-width: 90%;
+    }
+
+    #part3 h2 {
+        background-position-x: 79%;
     }
 }
 
 @media (max-width: 650px) {
     #part3 .try-taskey-container {
         height: 42rem;
-    } 
+    }
 
     #part3 .try-taskey-container img {
         left: -25rem;
+    }
+
+    #part3 h2 {
+        background-position-x: 60%;
+        background-position-y: 90%;
     }
 }
 
